@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    background: linear-gradient(135deg, rgb(143, 142, 142), #48c6ef);
+    color: #0e0e0e; /* Dark text for readability */
+    line-height: 1.6; /* Improved line height for better readability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Padding for the container */
+}
+
+header {
+    background: linear-gradient(135deg, rgb(133, 132, 132), #59ccf2);
+    color: rgb(218, 210, 210);
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+header h1 {
+    font-size: 2.5rem; /* Large font size for emphasis */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation */
+    margin-top: 1rem; /* Space above the navigation */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(236, 233, 233); /* White text for links */
+    font-weight: bold; /* Bold links for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold color on hover for elegance */
+}
+
+section {
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Centered text */
+}
+
+h2 {
+    font-size: 2rem; /* Heading size */
+    color: #004080; /* Consistent blue color */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.card {
+    background: linear-gradient(135deg, rgb(155, 153, 153), #84cae2);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px auto; /* Center the card with margin */
+    max-width: 600px; /* Maximum width for cards */
+}
+
+.card ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.card li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 1.1rem; /* Font size for list items */
+}
+
+footer {
+    background: #333; /* Dark footer for contrast */
+    color: white; /* White text for readability */
+    text-align: center; /* Centered text */
+    padding: 1rem 0; /* Padding for footer */
+    font-size: 1rem; /* Standard font size */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller heading size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between navigation items */
+    }
+
+    .card {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
